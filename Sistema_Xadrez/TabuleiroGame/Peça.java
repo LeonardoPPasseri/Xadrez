@@ -1,11 +1,11 @@
 package Sistema_Xadrez.TabuleiroGame;
 
-public class Peças {
+public class Peça {
     protected Posição posição;
     private Tabuleiro tabuleiro;
 
-    public Peças(){}
-    public Peças(Tabuleiro tabuleiro){
+    public Peça(){}
+    public Peça(Tabuleiro tabuleiro){
         this.tabuleiro = tabuleiro;
         posição = null;
     }
