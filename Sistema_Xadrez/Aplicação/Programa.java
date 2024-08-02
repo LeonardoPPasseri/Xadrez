@@ -1,8 +1,8 @@
 package Sistema_Xadrez.Aplicação;
 
-import Sistema_Xadrez.TabuleiroGame.Posição;
-import Sistema_Xadrez.TabuleiroGame.Tabuleiro;
-import Sistema_Xadrez.XadrezGame.PartidaDeXadrez;
+import Sistema_Xadrez.TabuleiroGame.*;
+import Sistema_Xadrez.TabuleiroGame.*;
+import Sistema_Xadrez.XadrezGame.*;
 
 public class Programa {
     public static void main(String[] args) {
