@@ -1,5 +1,6 @@
 package Sistema_Xadrez.XadrezGame;
 
+import Sistema_Xadrez.TabuleiroGame.Peça;
 import Sistema_Xadrez.TabuleiroGame.Posição;
 import Sistema_Xadrez.TabuleiroGame.Tabuleiro;
 import Sistema_Xadrez.XadrezGame.PeçasDoXadrez.King;
@@ -22,10 +23,16 @@ public class PartidaDeXadrez {
         }
         return mat; 
     }
+    private void colocarNovaPeça(char coluna,int linha,PeçaDeXadrez peça){
+        tabuleiro.lugarPeça(peça, new PosiçãoNoXadrez(coluna,linha).ToPosition());
+    }
 
     private void iniciarXadrez(){
         tabuleiro.lugarPeça(new Torre(tabuleiro, Cor.BRANCO),new Posição(0,0));
         tabuleiro.lugarPeça(new Torre(tabuleiro, Cor.BRANCO),new Posição(0,7));
         tabuleiro.lugarPeça(new King(tabuleiro, Cor.BRANCO), new Posição(0,4));
+        colocarNovaPeça('a',1 , new Torre(tabuleiro, Cor.BRANCO));
+        colocarNovaPeça('h',1 , new Torre(tabuleiro, Cor.BRANCO));
+        colocarNovaPeça('e',1 , new King(tabuleiro, Cor.BRANCO));
     }
 }
